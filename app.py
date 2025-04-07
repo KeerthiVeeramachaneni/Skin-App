@@ -8,6 +8,8 @@ from PIL import Image
 from model import EnsembleModel
 from grad_cam import generate_gradcam, generate_gradcam_plus_plus, overlay_heatmap
 
+st.set_page_config(page_title="Skin Lesion Classifier", layout="centered")
+
 # -------------------------
 # ✅ Download model if not exists
 # -------------------------
@@ -62,7 +64,7 @@ def preprocess_image(uploaded_file):
 # -------------------------
 # ✅ Streamlit UI
 # -------------------------
-st.set_page_config(page_title="Skin Lesion Classifier", layout="centered")
+
 st.title("🔬 Skin Lesion Classification with Grad-CAM Visualizations")
 st.markdown("Upload a dermoscopic image to classify and visualize important regions using Grad-CAM or Grad-CAM++")
 

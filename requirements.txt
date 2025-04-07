@@ -5,3 +5,6 @@ numpy
 opencv-python-headless
 Pillow
 gdown
+
+efficientnet_pytorch
+
